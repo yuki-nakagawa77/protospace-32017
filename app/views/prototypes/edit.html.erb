@@ -1,0 +1,10 @@
+<div class="main">
+  <div class="inner">
+    <div class="form__wrapper">
+      <h2 class="page-heading">プロトタイプ編集</h2>
+      <%# 部分テンプレートでフォームを表示する %>
+      <%= render partial: "form", locals: { prototype: @prototype } %>
+      <%# ↪︎edit.html.erbから部分テンプレートである、_form.html.erbを呼び出す記述をした%>
+    </div>
+  </div>
+</div>
