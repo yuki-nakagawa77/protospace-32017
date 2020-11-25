@@ -52,7 +52,7 @@
               <% @comments.each do |comment| %>
                 <p>
                   <li class="comments_list"><%= comment.text %>
-                  <%= link_to "#{comment.user.name}さん", user_path(@prototype.user.id), class: :comment_user %>
+                  <%= link_to "#{comment.user.name}さん", user_path(comment.user.id), class: :comment_user %>
                 </p>
               <% end %>
               <%#↪︎show.html.erbに投稿に紐づくコメントおよびその投稿者を表示する記述をした%>
